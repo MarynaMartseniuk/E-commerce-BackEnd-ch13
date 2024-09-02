@@ -28,7 +28,7 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 
 
 ## Credits
-1. source of code: UofU bootcamp, module 13, activities 06, 23
+1. source of code: UofU bootcamp, module 13, activities 06, 23, 26
 2. source for data types: https://sequelize.org/docs/v7/models/data-types/#integers
 
 ## License

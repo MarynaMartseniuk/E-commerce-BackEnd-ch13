@@ -7,17 +7,37 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
-  Product.findAll()
-    .then((data) => {
-      res.json(data);
-      console.log(res.json(data));
-    });
+
+
+  Product.findAll({include: [{ model: Category}, {model: Tag, through: ProductTag}],})
+  .then((data) => {
+    res.json(data);
+    //console.log(res.json(data));
+  });
+
+// ProductTag.findAll({include: [{model: Product, model: Tag}]})
+// .then((data) => {
+//   res.json(data);
+//   //console.log(res.json(data));
+//});
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  
+  // Product.findByPk(req.params.id).then((data) => {
+  //   res.json(data);
+
+  ProductTag.findByPk(req.params.id, {
+    include: [{model: Product, model: Tag}]
+  })
+  .then((data) => {
+    res.json(data);
+
+  });
+
 });
 
 // create new product
@@ -30,6 +50,24 @@ router.post('/', (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
+
+    // mod 13, act 05
+    // router.post('/', (req, res) => {
+    //   Book.create({
+    //     title: req.body.title,
+    //     author: req.body.author,
+    //     is_paperback: true
+    //   })
+    //   .then((newBook) => {
+    //     // Send the newly created row as a JSON object
+    //     res.json(newBook);
+    //   })
+    //   .catch((err) => {
+    //     res.json(err);
+    //   });
+    // });
+
+
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
