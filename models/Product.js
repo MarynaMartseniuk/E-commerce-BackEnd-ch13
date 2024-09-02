@@ -28,12 +28,11 @@ Product.init(
       },
     },
     stock: {
-      // type: DataTypes.BIGINT, // BIGINT for up to 10-digit integers
-      type: DataTypes.INTEGER(10), 
+      type: DataTypes.INTEGER, 
       allowNull: false,
+      defaultValue: 10, // set a default value of 10, source: ChatGPT 
       validate: {
         isNumeric: true,
-        len: [1, 10] // Ensure the length is within 10 digits
       },
     },
     category_id: {

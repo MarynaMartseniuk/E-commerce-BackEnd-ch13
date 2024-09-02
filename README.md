@@ -28,8 +28,8 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 
 
 ## Credits
-1. sorce of code: UofU bootcamp, module 13 
-2. 
+1. source of code: UofU bootcamp, module 13, activities 06, 23
+2. source for data types: https://sequelize.org/docs/v7/models/data-types/#integers
 
 ## License
 ### All assets and code are under the MIT license. Please, check more info in lisence section of this repo.
