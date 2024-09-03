@@ -2,10 +2,13 @@
 A Back End for an e-commerce site that uses Express.js API configured to use Sequelize to interact with a PostgreSQL database.
 
 ## Description
-### Motivation to create this App 
-### I built this App because 
-### This App hepls 
-### This project was interesting and usefull for me because, as a begginer, I learned how to use NodeJs, Inquirer package, Mardown syntax.
+### Motivation to create this App was a wish to have an example of ORM App, that can handle diferent kinds of user requests (RESTful routs).
+### I built this App because it had some new coding challanges needed to be solved. For me, as for a begginer, it was importent to get a new skills and got understanding that "I can do it!".
+### This App handle GET, POST, Put and DELETE requests, so user can get a data from server, create a new data and save it on server, update existing data and delete data from server.
+### This project was interesting and usefull for me because, as a begginer, I learned how:
+- to communicate with a server (data transfer); 
+- to manage to get a necessary data from database (operating with different tables); 
+- to communicate with a server without a Front End using Insomnia.
 
 ## Table of Contents
 
@@ -17,11 +20,15 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 - [Questions](#questions)
 
 ## Installation
-
-### To use this App you need 
+### To use this App you need to install NodeJS and Insomnia on your PC, copy this repo with a code, then use a Command Line to run this App. 
 
 ## Usage
-
+1. in the Command Line/GitBush/Terminal go to the folder with the code;
+2. login into pSQL and run "\i db/schema.sql". After this done, logout of pSQL;
+3. run "npm install" to buid the App;
+4. run "node server.js" to create/connect db models;
+5. run "node seeds/index.js" to seed database;
+6. run "node server.js" to start the App. In Insomnia use routes from routs/api/index.js to make different reqeusts: GET/GET:id/POST/PUT/DELETE and check the resalts in database.
 
 ### run the App will look like this:
 ![run the App will look like this:]()

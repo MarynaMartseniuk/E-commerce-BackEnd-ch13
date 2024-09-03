@@ -32,28 +32,18 @@ router.post('/', (req, res) => {
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
+      category_id: 4,
       tagIds: [1, 2, 3, 4]
     }
   */
 
-    // mod 13, act 05
-    // router.post('/', (req, res) => {
-    //   Book.create({
-    //     title: req.body.title,
-    //     author: req.body.author,
-    //     is_paperback: true
-    //   })
-    //   .then((newBook) => {
-    //     // Send the newly created row as a JSON object
-    //     res.json(newBook);
-    //   })
-    //   .catch((err) => {
-    //     res.json(err);
-    //   });
-    // });
-
-
-  Product.create(req.body)
+  //Product.create(req.body)
+  Product.create({
+    product_name: req.body.product_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    category_id: req.body.category_id
+  })
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
@@ -63,8 +53,11 @@ router.post('/', (req, res) => {
             tag_id,
           };
         });
+        // source: ChatGPT => 'bulkCreate': This is a Sequelize method used to insert multiple records into the database in a single query.
         return ProductTag.bulkCreate(productTagIdArr);
       }
+      // 
+
       // if no product tags, just respond
       res.status(200).json(product);
     })
