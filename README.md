@@ -20,21 +20,25 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 - [Questions](#questions)
 
 ## Installation
-### To use this App you need to install NodeJS and Insomnia on your PC, copy this repo with a code, then use a Command Line to run this App. 
+### To use this App you need to:
+- install NodeJS and Insomnia/Postman on your PC,
+- copy this repo with a code on your PC,
+- use a cmd/GitBush/Terminal to start this App,
+- and run this App in Insomnia/Postman 
 
 ## Usage
 1. in the Command Line/GitBush/Terminal go to the folder with the code;
 2. login into pSQL and run "\i db/schema.sql". After this done, logout of pSQL;
 3. run "npm install" to buid the App;
-4. run "node server.js" to create/connect db models;
+4. run "node server.js" to create/connect db models and then stop the server (for gitBush: ctrl+C);
 5. run "node seeds/index.js" to seed database;
-6. run "node server.js" to start the App. In Insomnia use routes from routs/api/index.js to make different reqeusts: GET/GET:id/POST/PUT/DELETE and check the resalts in database.
+6. run "node server.js" to start the App.
+7. In Insomnia use routes from routs/api/index.js to make different reqeusts: GET/GET:id/POST/PUT/DELETE and check the resalts in database.
+8. to stop the App run "ctrl+C" for gitBush.
 
 ### run the App will look like this:
 ![Run the App will look like this:](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/image/post%20product.jpg)
 [![To upload the video click here](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)
-
-
 
 ## Credits
 1. source of code: UofU bootcamp, module 13, activities 06, 23, 26
