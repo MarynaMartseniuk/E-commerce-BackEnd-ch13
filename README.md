@@ -38,7 +38,7 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 
 ### run the App will look like this:
 ![Run the App will look like this:](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/image/post%20product.jpg)
-[![To upload the video click here](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)
+[![Click here to upload the video and check full functionality of this App](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)
 
 ## Credits
 1. source of code: UofU bootcamp, module 13, activities 06, 23, 26
