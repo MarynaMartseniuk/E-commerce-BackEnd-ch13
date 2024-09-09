@@ -31,7 +31,8 @@ A Back End for an e-commerce site that uses Express.js API configured to use Seq
 6. run "node server.js" to start the App. In Insomnia use routes from routs/api/index.js to make different reqeusts: GET/GET:id/POST/PUT/DELETE and check the resalts in database.
 
 ### run the App will look like this:
-[![Watch the video](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)
+![run the App will look like this:]()
+[![To upload the video](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)](https://github.com/MarynaMartseniuk/E-commerce-BackEnd-ch13/blob/main/assets/video/challenge13.mp4)
 
 
 
